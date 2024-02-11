@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/manosalaobra/static/css/main.9972b1aa.css",
-    "main.js": "/manosalaobra/static/js/main.ff4c1482.js",
+    "main.js": "/manosalaobra/static/js/main.2cea6033.js",
     "index.html": "/manosalaobra/index.html",
     "main.9972b1aa.css.map": "/manosalaobra/static/css/main.9972b1aa.css.map",
-    "main.ff4c1482.js.map": "/manosalaobra/static/js/main.ff4c1482.js.map"
+    "main.2cea6033.js.map": "/manosalaobra/static/js/main.2cea6033.js.map"
   },
   "entrypoints": [
     "static/css/main.9972b1aa.css",
-    "static/js/main.ff4c1482.js"
+    "static/js/main.2cea6033.js"
   ]
 }
