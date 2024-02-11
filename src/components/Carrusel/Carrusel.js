@@ -16,20 +16,20 @@ function Carrusel () {
                     estado={"carousel-item active"}
                     alt={"Primera imagen de portada"} 
                     imagen={"../images/slide-1.jpg"}
-                    titulo={"Lo petamos fuerte"}
-                    descripcion={"Esta es una pequeña descripción de la imagen"}/>
+                    titulo={"Jardines colgantes de Babilonia"}
+                    descripcion={"Una de las siete maravillas del mundo antiguo"}/>
                 <SlideCarrusel 
                     estado={"carousel-item"}
                     alt={"Segunda imagen de portada"} 
                     imagen={"../images/slide-2.jpg"}
-                    titulo={"Aquí también lo petamos fuerte"}
-                    descripcion={"Esta es otra pequeña descripción de la imagen"}/>
+                    titulo={"Aquí la liamos un poco"}
+                    descripcion={"Nos pidieron una chimenea y casi hacemos la capilla sixtina"}/>
                 <SlideCarrusel 
                     estado={"carousel-item"}
                     alt={"Tercera imagen de portada"} 
                     imagen={"../images/slide-3.jpg"}
-                    titulo={"Efectivamente, aquí también lo petamos fuerte"}
-                    descripcion={"Esta otra descripción más de la imagen"}/>
+                    titulo={"Chris Hani Baragwanath Hospital"}
+                    descripcion={"con 172 edificios, y más de 700 mil metros cuadrados, es el hospital más grande del mundo"}/>
             </div>
             <BotonesCarrusel />
         </div>
