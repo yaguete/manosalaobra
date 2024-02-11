@@ -2,19 +2,19 @@
     {
         "imageUrl": "/images/manolo.jpg",
         "title": "MANUEL JUMILLA",
-        "text": "Lorem ipsum blablabla y esto y lo otro"
+        "text": "CEO & Founder"
     },
 
     {
         "imageUrl": "/images/Benito.png",
         "title": "BENITO LOPERA",
-        "text": "Lorem ipsum blablabla y esto y lo otro"
+        "text": "Chief Technology Officer"
     },
 
     {
         "imageUrl": "/images/Tato.png",
         "title": "PROTESTATO LEAL",
-        "text": "Lorem ipsum blablabla y esto y lo otro"
+        "text": "Chief Financial Officer"
     }
 
 ]
