@@ -1,0 +1,30 @@
+
+
+.card.service .card-body {
+    background-color: snow;
+}
+
+
+.card.service {
+    max-height: 220px; /* Altura máxima de cada tarjeta */
+    background-color: snow;
+    
+}
+
+.card.service .card-body i.bi { /*Aumentando el tamaño de los iconos*/
+    font-size: 3.5em; 
+
+}
+
+
+@media screen and (max-width: 992px) {
+    .card.service {
+        justify-content:space-between;
+    }
+    .card.service .card-body i.bi { /*Aumentando el tamaño de los iconos*/
+        font-size: 2.5em; 
+    
+    }
+}
+    
+    

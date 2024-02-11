@@ -1,0 +1,101 @@
+.StoryCard {
+    width: 400px; /* Ajusta el ancho según tus necesidades */
+    margin: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+  }
+
+.StoryCard::before {
+    content: ""; /* Esto es necesario para que el pseudo-elemento se renderice */
+    position: absolute; /* Posiciona el pseudo-elemento de forma absoluta con respecto a su contenedor */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.06);
+    border-radius: 8px; /* Esto es para que el velo también tenga el mismo borde redondeado que la tarjeta */
+    z-index: 1; /* Coloca el velo por encima de la imagen pero debajo del texto */
+  }
+  
+.StoryCard:hover {
+    transform: scale(1.05); /* Efecto para agrandar ligeramente la tarjeta al pasar el ratón por encima */
+    .story-name {
+        font-weight:bolder;
+    };
+    .story-text {
+        display: block;
+        margin: 0;
+        font-size: 1rem;
+        color: white;
+        z-index: 2;
+        background-color:  rgba(0, 0, 0, 0.3);
+    } 
+}
+
+.story-image {
+    width: 100%;
+    height: 500px; 
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio disponible */
+    display: block;
+}
+
+.story-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    right: 0;
+    bottom: 0; /* Coloca el título en la parte inferior del contenedor de la imagen */
+    left: 0; /* Alinea el título a la izquierda del contenedor de la imagen */
+    width: 100%; /* Ocupa el ancho completo del contenedor de la imagen */
+    margin: 0; /* Asegúrate de que no haya margen extra */
+    box-sizing: border-box; /* Incluye el padding en el ancho del elemento */
+    z-index: 2;
+    transform: translateY(15%); /* Moviendo el contenido un poquito hacia abajo, desde el centro */
+
+}
+
+.story-name {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: lighter;
+    color: black; /* Color del texto */
+    text-shadow: 2px 2px 8px rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.story-text {
+    display: none;
+}
+
+@media screen and (max-width: 768px) { /* 768px es un punto de corte común para dispositivos móviles */
+
+    .StoryCard {
+        width: 360px; /* Ajusta el ancho según tus necesidades */
+        border-radius: 8px;
+        margin: 5px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        position: relative;
+      }
+
+    .story-name {
+        font-weight:bolder;
+    };
+    .story-text {
+        display: block;
+        margin: 0;
+        font-size: 1rem;
+        color: white;
+        z-index: 2;
+        background-color:  rgba(0, 0, 0, 0.3);
+    }
+
+}

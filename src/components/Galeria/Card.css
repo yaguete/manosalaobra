@@ -1,0 +1,24 @@
+.card {
+    height: 350px;
+    margin: 20px;
+}
+
+.card img {
+    height: 180px;
+}
+
+.card-body {
+    text-align: left;
+}
+
+.card-text {
+    font-size: small;
+}
+
+@media screen and (max-width: 768px) { /* 768px es un punto de corte común para dispositivos móviles */
+    .card {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

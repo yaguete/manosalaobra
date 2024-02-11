@@ -1,0 +1,40 @@
+.formulario-contacto {
+    display: block;
+    width: 50%; /* En pantallas de escritorio */
+    max-width: 700px;
+    margin-left: 90px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    border-color: black;
+}
+
+.formulario-contacto button {
+    width: 200px;
+    border-radius: 20px;
+
+}
+
+.form-label.required::after {
+    content: " *";
+    color: red;
+}
+
+/* Cambia la alineación del botón, si es necesario */
+.formulario-contacto .btn {
+    align-self: flex-start; /* Cambia a 'flex-start' si estás usando flexbox y quieres alinear a la izquierda */
+}
+
+@media screen and (max-width: 992px) {
+    .formulario-contacto {
+        width: 100%; /* En dispositivos más pequeños como tablets */
+        margin: 0 auto; /* Mantén el formulario centrado */
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) { /* 768px es un punto de corte común para dispositivos móviles */
+    .formulario-contacto button {
+        width: 100%;    
+    }
+}

@@ -1,0 +1,55 @@
+
+.carousel {
+    margin-top: 0px;
+}
+
+.carousel-container {
+    position: relative; /* Hace que el contenedor sea el punto de referencia para el posicionamiento absoluto */
+} 
+
+.carousel-item {
+    height: 600px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    max-width: 100%; 
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.350); /* Ajuste de opacidad */
+}
+
+@media screen and (max-width: 992px) { /* 768px es un punto de corte común para tablets */
+    .carousel-item {
+        height: 380px;}
+
+}
+
+@media screen and (max-width: 768px) { /* 768px es un punto de corte común para dispositivos móviles */ .carousel-control-prev {
+        display: none;
+    }
+
+    .carousel-control-next {
+        display: none;
+    }
+
+    .carousel-item {
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .carousel-inner img {
+        height: 400px;
+        width: auto;
+    }
+
+}

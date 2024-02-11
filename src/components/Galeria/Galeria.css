@@ -1,0 +1,39 @@
+
+.galeria {
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.galeria ul {
+    display: flex;
+    flex-flow: wrap;
+    justify-content:first baseline;
+    align-items: flex-start;
+    list-style: none;
+}
+
+.galeria ul li {
+    width: 300px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) { /* 768px es un punto de corte común para dispositivos móviles */
+    .galeria ul {
+        justify-content: center;
+        padding-left: 0px;
+    }
+
+    .galeria ul li {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
+    .galeria-item {
+        width: 100%; /* Hace que las tarjetas sean más anchas */
+        margin-bottom: 20px;
+    }
+
+}

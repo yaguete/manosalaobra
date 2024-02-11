@@ -1,0 +1,26 @@
+.footer {
+    background-color: #1b1f22;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.redes {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    flex-wrap: wrap; /* Ajuste de los botones en múltiples líneas si no hay suficiente espacio */
+}
+
+.redes .btn.btn-outline-light {
+    margin: 10px;
+    border: none;
+}
+
+.footer p {
+    color: white;
+    text-align: center; /* Centra el texto */
+
+} 

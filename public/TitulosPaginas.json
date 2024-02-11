@@ -1,0 +1,22 @@
+{
+    "Quienes_somos": {
+        "titulo": "Crecemos contigo",
+        "parrafo": "Somos un grupo global que cotiza en el selectivo español Ibex 35. Estamos presentes en más de 20 países en cuatro continentes, en los que desarrollamos proyectos innovadores de alto valor. Ponemos nuestro talento al servicio del progreso y trabajamos con esfuerzo y pasión para convertir cualquier reto en un desafío cumplido"
+    },
+
+    "Casos_exito": {
+        "titulo": "Transformamos el mundo",
+        "parrafo": "Solo hace falta una idea para convertir un sueño en realidad. Nuestra filosofía se basa en transformar ideas en nuevos productos, servicios y modelos de negocio. Nuestra misión es mejorar la calidad de vida del ciudadano a través proyectos que supongan un reto tecnológico y que tienen un denominador común: la excelencia por el trabajo bien hecho y la innovación enfocada al mejor producto."
+    },
+
+    "Nuestros_servicios": {
+        "titulo": "Innovación y calidad",
+        "parrafo": "Ofrecemos servicios de vanguardia mediante la armonización de selección y formación de equipos, tecnología y métodos, que permiten lograr una eficiencia y un control de procesos óptimos. Estamos comprometidos a seguir transformando nuestros servicios para asegurar una experiencia de usuario excepcional."
+    },
+
+    "Contacto": {
+        "titulo": "Estamos a tu disposición",
+        "parrafo": "Más de 43.000 profesionales de Manos a la Obra trabajan en todo el mundo para ofrecer a la sociedad infraestructuras y servicios sostenibles, duraderos y de calidad. Contacta con nosotros a través del formulario que encontrarás a continuación:"
+    }
+
+}
