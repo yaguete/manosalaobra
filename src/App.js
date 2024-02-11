@@ -56,11 +56,11 @@ function App() {
     <BannerCookies acepta={handleAcepta} rechaza={handleRechaza} />}
     <Navbar />
     <Routes>
-      <Route path='/' element={ <Inicio/> } />
-      <Route path='/quienes-somos' element={ <QuienesSomos /> } />
-      <Route path='/proyectos' element={ <NuestrasObras/> }  />
-      <Route path='/servicios' element={ <Servicios/> }  />
-      <Route path='/contacto' element={<Contacto/>} />
+      <Route path='/manosalaobra' element={ <Inicio/> } />
+      <Route path='/manosalaobra/quienes-somos' element={ <QuienesSomos /> } />
+      <Route path='/manosalaobra/proyectos' element={ <NuestrasObras/> }  />
+      <Route path='/manosalaobra/servicios' element={ <Servicios/> }  />
+      <Route path='/manosalaobra/contacto' element={<Contacto/>} />
     </Routes>
     <Footer />
     </>
