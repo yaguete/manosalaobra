@@ -1,0 +1,32 @@
+[
+    {
+        "icono": "bi bi-bricks",
+        "titulo": "Grandes promociones",
+        "detalle": "Esto y lo otro y lo de más allá. Esto es un texto de ejemplo"
+    },
+
+   {
+        "icono": "bi bi-hammer",
+        "titulo": "Reformas y rehabilitaciones",
+        "detalle": "Esto y lo otro y lo de más allá. Esto es un texto de ejemplo"
+    },
+
+    {
+        "icono": "bi bi-recycle",
+        "titulo": "Proyectos de reciclaje",
+        "detalle": "Esto y lo otro y lo de más allá. Esto es un texto de ejemplo"
+    },
+
+    {
+        "icono": "bi bi-lightning-charge-fill",
+        "titulo": "Energía y suministros",
+        "detalle": "Esto y lo otro y lo de más allá. Esto es un texto de ejemplo"
+    },
+
+    {
+        "icono": "bi bi bi-airplane-fill",
+        "titulo": "Ingeniería civil",
+        "detalle": "Esto y lo otro y lo de más allá. Esto es un texto de ejemplo"
+    }
+
+]
