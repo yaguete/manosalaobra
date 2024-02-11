@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
+import emailjs from 'emailjs-com'
 import './FormContact.css'
 
 function FormContact() {
 
     const [servicios, setServicios] = useState([]);
+    const [MostrarMensajedeExito, setMostrarMensajedeExito] = useState(false);
+    const [MostrarMensajedeError, setMostrarMensajedeError] = useState(false);
     
         useEffect(() => {
             fetch('./Servicios.json')
@@ -17,32 +20,22 @@ function FormContact() {
                 .catch(error => console.error('Error al cargar la el listado de servicios:', error));
         }, []); // El array vacío asegura que esto se ejecute solo una vez
     
-    const handleSubmit = async (event) => {
+    const handleSubmit = (event) => {
         event.preventDefault(); // Evita el comportamiento predeterminado de envío del formulario
-        // Crear un objeto FormData para recoger todos los valores del formulario
-        const formData = new FormData(event.target);
-        const data = {};
-        formData.forEach((valor, clave) => (data[clave] = valor));
 
-        // Opción para realizar la solicitud POST
-        const requestOptions = {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(data),
-        };
+        // Envía el formulario utilizando EmailJS
+        emailjs.sendForm('service_w6g2xvq', 'template_drbfvi3', event.target, '7o-XmdRmjxd8cXTq2')
+            .then((result) => {
+                setMostrarMensajedeExito(true); // Muestra el mensaje de éxito
+                setTimeout(() => setMostrarMensajedeExito(false), 10000); // Oculta el mensaje después de 10 segundos
+            }, (error) => {
+                console.log('Error al enviar el formulario:', error.text);
+                setMostrarMensajedeError(true); // Muestra el mensaje de error
+                setTimeout(() => setMostrarMensajedeError(false), 10000); // Oculta el mensaje después de 10 segundos
+            });
 
-        try {
-            // Realizar la solicitud POST
-            const response = await fetch('', requestOptions);
-            if (!response.ok) {
-                throw new Error('Parece que algo ha ido mal: ' + response.statusText);
-            }
-            const result = await response.json();
-            console.log('Formulario enviado con éxito:', result);
-        } catch (error) {
-            // Manejar el error aquí
-            console.error('Error al enviar el formulario:', error);
-        }
+        // Limpia el formulario después del envío
+        event.target.reset();
     };
 
     return (
@@ -64,13 +57,12 @@ function FormContact() {
                     <option selected>Elige uno...</option>
                     {
                         servicios.map((servicio, index) => (
-                            <option value={servicio.titulo}>{servicio.titulo}</option>
-                        ))
-                        }
+                            <option key={index} value={servicio.titulo}>{servicio.titulo}</option>
+                        ))}
                     <option value="Otro">Es otra cosa</option>
                     </select>
                     </div>
-            <div class="mb-3">
+            <div className="mb-3">
                 <label htmlFor="exampleFormControlTextarea1" className ="form-label">Si quieres, explícanos tu caso</label>
                 <textarea className="form-control" id="exampleFormControlTextarea1" name="comentarios" rows="3"></textarea>
                 </div>
@@ -78,6 +70,14 @@ function FormContact() {
                     <input type="checkbox" className="form-check-input" id="exampleCheck1" name="tratamiento_datos" required/>
                         <label className="form-check-label" htmlFor="exampleCheck1">Acepto el tratamiento de datos para que me contacten y conozco la cláusula adicional de protección de datos.</label>
                         </div>
+                        {MostrarMensajedeExito && (
+                        <div className="alert alert-success" role="alert">
+                            ¡Formulario enviado con éxito!</div>
+                            )}
+                        {MostrarMensajedeError && (
+                        <div class="alert alert-danger" role="alert">
+                            Vaya, algo ha salido mal: tu mensaje no ha podido ser enviado. Por favor, inténtalo de nuevo</div>
+                            )}
                         <button type="submit" className="btn btn-primary">Enviar</button>
         </form>
         </div>)}

@@ -47,7 +47,7 @@ function QuienesSomos () {
                 </h1>
         <div className="VideoVimeo">
             <iframe
-                title=""
+                title="video random de obras"
                 src="https://player.vimeo.com/video/158388973?h=018e537777&title=0&byline=0&portrait=0" 
                 allow="autoplay; fullscreen; picture-in-picture" 
                 allowFullScreen>
