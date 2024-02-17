@@ -9,7 +9,7 @@ function Equipo( {equipo, index} ) {
             {equipo.map((equipo, index) => 
             (<div className='equipo' key={index}>
                     <StoryCard 
-                    imageUrl={equipo.imageUrl}
+                    imageUrl={`${process.env.PUBLIC_URL}/images/${equipo.imageUrl}`}
                     title={equipo.title}
                     text={equipo.text}
                     />

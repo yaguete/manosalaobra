@@ -5,7 +5,7 @@ function Result( {proyecto} ) {
     return (
         <li>
           <Card
-            imagen={proyecto.imagen}
+            imagen={`${process.env.PUBLIC_URL}/images/${proyecto.imagen}`}
             titulo={proyecto.titulo}
             contenido={proyecto.contenido}
             url={proyecto.url}

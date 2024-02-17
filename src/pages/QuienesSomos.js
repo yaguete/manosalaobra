@@ -6,7 +6,7 @@ function QuienesSomos () {
 
     const [titulopagina, setTitulopagina] = useState({titulo: '', parrafo: ''});
         useEffect(() => {
-            fetch('./TitulosPaginas.json')
+            fetch(`${process.env.PUBLIC_URL}/TitulosPaginas.json`)
                 .then(response=> {
                     if (response.status !== 200) {
                         throw new Error('Error al cargar el título de la página');
@@ -25,7 +25,7 @@ function QuienesSomos () {
     const [equipo, setEquipo] = useState([]);
     
         useEffect(() => {
-            fetch('./Equipo.json')
+            fetch(`${process.env.PUBLIC_URL}/Equipo.json`)
                 .then(response => {
                     if (response.status !== 200) {
                         throw new Error('Error al cargar el listado de Equipo');

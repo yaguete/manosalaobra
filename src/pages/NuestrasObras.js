@@ -8,7 +8,7 @@ function NuestrasObras(){
 
     const [titulopagina, setTitulopagina] = useState({titulo: '', parrafo: ''});
         useEffect(() => {
-            fetch('./TitulosPaginas.json')
+            fetch(`${process.env.PUBLIC_URL}/TitulosPaginas.json`)
                 .then(response=> {
                     if (response.status !== 200) {
                         throw new Error('Error al cargar el título de la página');
@@ -32,7 +32,7 @@ function NuestrasObras(){
     };
     
     useEffect(() => {
-        fetch('./Proyectos.json')
+        fetch(`${process.env.PUBLIC_URL}/Proyectos.json`)
             .then(response => {
                 if (response.status !== 200) {
                     throw new Error('Error al cargar el listado de proyectos');

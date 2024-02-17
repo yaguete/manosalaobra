@@ -5,7 +5,7 @@ import TituloPagina from "../components/TituloPagina/TituloPagina";
 function Servicios () {
     const [titulopagina, setTitulopagina] = useState({titulo: '', parrafo: ''});
         useEffect(() => {
-            fetch('./TitulosPaginas.json')
+            fetch(`${process.env.PUBLIC_URL}/TitulosPaginas.json`)
                 .then(response=> {
                     if (response.status !== 200) {
                         throw new Error('Error al cargar el título de la página');
@@ -25,7 +25,7 @@ function Servicios () {
     const [servicios, setServicios] = useState([]);
 
     useEffect(() => {
-        fetch('./Servicios.json')
+        fetch(`${process.env.PUBLIC_URL}/Servicios.json`)
             .then(response => {
                 if (response.status !== 200) {
                     throw new Error('Error al cargar el listado de servicios');

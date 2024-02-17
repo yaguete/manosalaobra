@@ -9,7 +9,7 @@ function FormContact() {
     const [MostrarMensajedeError, setMostrarMensajedeError] = useState(false);
     
         useEffect(() => {
-            fetch('./Servicios.json')
+            fetch(`${process.env.PUBLIC_URL}/Servicios.json`)
                 .then(response => {
                     if (response.status !== 200) {
                         throw new Error('Error al cargar el listado de servicios');
@@ -34,8 +34,8 @@ function FormContact() {
                 setTimeout(() => setMostrarMensajedeError(false), 10000); // Oculta el mensaje después de 10 segundos
             });
 
-        // Limpia el formulario después del envío
-        event.target.reset();
+        // Limpia el formulario después del envío. Espera 2 segundos para que salga el mensaje de éxito o error antes de que se limpie el formulario
+        setTimeout(() => event.target.reset(), 2000);
     };
 
     return (
@@ -72,7 +72,7 @@ function FormContact() {
                         </div>
                         {MostrarMensajedeExito && (
                         <div className="alert alert-success" role="alert">
-                            ¡Formulario enviado con éxito!</div>
+                            ¡Solicitud de contacto enviada con éxito! Te contestaremos en seguida 😊</div>
                             )}
                         {MostrarMensajedeError && (
                         <div class="alert alert-danger" role="alert">
