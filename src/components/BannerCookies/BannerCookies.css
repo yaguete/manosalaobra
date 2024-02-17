@@ -10,7 +10,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave para destacar el banner */
     z-index: 100; /* Asegura que el banner esté por encima de otros elementos */
     border-radius: 10px; /* Bordes redondeados */
-    display: flex; /* Utiliza flexbox para el contenido interno */
+    display: flex; 
     flex-direction: column; /* Organiza el contenido en columnas */
     align-items: center; /* Centra los elementos hijos horizontalmente */
     justify-content: center; /* Centra los elementos hijos verticalmente */

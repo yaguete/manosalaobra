@@ -5,7 +5,7 @@ function BannerCookies ({ acepta, rechaza} ) {
     return (
         <div className="bannerCookies">
             <div className="cookiesTexto">
-                <img src="../images/Cookie.png" alt="Imagen de cookie"></img>
+                <img src={`${process.env.PUBLIC_URL}/images/Cookie.png`} alt="Imagen de cookie"></img>
                 <h3>¿Te hace una cookie?</h3>
                 <p>Esta web usa cookies propias y de terceros para ofrecer un mejor servicio y realizar estadísticas de datos de uso. Acéptalas antes de seguir navegando para poder disfrutar de todos sus contenidos con plena funcionalidad.</p>
             </div>

@@ -3,7 +3,7 @@
     margin-left: 50px;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start ; /* Esto alineará las tarjetas al inicio */
+    align-items: flex-start ; /* Alinea las tarjetas al inicio */
     padding: 20px; /* Espacio alrededor del contenedor */
 }
 

@@ -13,8 +13,8 @@ body {
     display: inline;
     position: absolute; /* Posiciona el título de forma absoluta dentro del contenedor */
     left: 5%; /* Centra el título horizontalmente */
-    color: white; /* Ajusta el color del texto si es necesario */
-    z-index: 10; /* Asegúrate de que el título se muestre sobre las imágenes del carrusel */
+    color: white;
+    z-index: 10; /* Asegura que el título se muestra sobre las imágenes del carrusel */
 }
 
 .titulo-web h1 {
