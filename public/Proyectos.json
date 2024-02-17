@@ -1,43 +1,43 @@
 {
     "Proyecto_uno": {
         "imagen": "Proyecto_1.jpg",
-        "titulo": "Proyecto blablabá",
-        "contenido": "Esto y lo otro y lo de más allá. Esto es un texto de ejemplo",
+        "titulo": "Edificio la Rumbera",
+        "contenido": "MÉXICO CITY · El proyecto más vanguardista del medio-oeste mejicano",
         "url": "www.google.com"
     },
 
     "Proyecto_dos": {
         "imagen": "Proyecto_2.jpg",
-        "titulo": "Proyecto tri tri tri",
-        "contenido": "Esto y lo otro y lo de más allá. Esto es un texto de ejemplo",
+        "titulo": "Pisos loquitos",
+        "contenido": "FRANKFURT · Lo hicimos así a ojo y se nos fue torciendo la cosa. Así quedó.",
         "url": "www.google.com"
     },
 
     "Proyecto_tres": {
         "imagen": "Proyecto_3.jpg",
-        "titulo": "Proyecto traca tra",
-        "contenido": "Esto y lo otro y lo de más allá. Esto es un texto de ejemplo",
+        "titulo": "Proyecto cristal",
+        "contenido": "MUNICH · Este hicimos para compensar el otro. Más o menos quedó bien",
         "url": "www.google.com"
     },
 
     "Proyecto_cuatro": {
         "imagen": "Proyecto_4.jpg",
-        "titulo": "Proyecto blu blu blu",
-        "contenido": "Esto y lo otro y lo de más allá. Esto es un texto de ejemplo",
+        "titulo": "Esquina resultona",
+        "contenido": "MADRID · Este ni siquiera lo hicimos nosotros, pero me gustó la foto",
         "url": "www.google.com"
     },
 
     "Proyecto_cinco": {
         "imagen": "Proyecto_5.jpg",
-        "titulo": "Proyecto ji ji ji",
-        "contenido": "Esto y lo otro y lo de más allá. Esto es un texto de ejemplo",
+        "titulo": "El piruli",
+        "contenido": "NUEVA YORK · Empezamos a apilar cajas de cerveza y se nos fué la mano",
         "url": "www.google.com"
     },
 
     "Proyecto_seis": {
         "imagen": "Proyecto_6.jpg",
-        "titulo": "Proyecto tarari que te vi",
-        "contenido": "Esto y lo otro y lo de más allá. Esto es un texto de esternocleidomastoideo",
+        "titulo": "El Corte Japonés",
+        "contenido": "TOKIO · Los japoneses querían un Corte Inglés, y ahí se lo dejamos",
         "url": "www.google.com"
     }
 }
