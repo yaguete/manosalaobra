@@ -77,7 +77,7 @@
 @media screen and (max-width: 768px) { /* 768px es un punto de corte común para dispositivos móviles */
 
     .StoryCard {
-        width: 360px; /* Ajusta el ancho según tus necesidades */
+        width: 360px;
         border-radius: 8px;
         margin: 5px;
         overflow: hidden;
